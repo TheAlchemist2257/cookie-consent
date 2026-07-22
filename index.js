@@ -1,4 +1,5 @@
-
+import loading from '/images/loading.svg'
+import  pirate  from '/images/pirate.gif'
 
 const modal = document.getElementById('modal')
 const modalCloseBtn = document.getElementById('modal-close-btn')
@@ -31,7 +32,7 @@ consentForm.addEventListener('submit', function(e){
 
     modalText.innerHTML = `
     <div class="modal-inner-loading">
-        <img src="images/loading.svg" class="loading">
+        <img src="${loading}" class="loading">
         <p id="upload-text">Uploading your data to the dark web...</p>
     </div>
     ` 
@@ -47,7 +48,7 @@ consentForm.addEventListener('submit', function(e){
         <h2>Thanks <span class="modal-display-name">${fullName}</span>, you sucker! </h2>
         <p>We just sold the rights to your eternal soul.</p>
         <div class="idiot-gif">
-            <img src="images/pirate.gif">
+            <img src="${pirate}">
         </div>
         `
         modalCloseBtn.disabled = false
