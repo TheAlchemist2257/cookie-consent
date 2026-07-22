@@ -16,11 +16,11 @@ modalCloseBtn.addEventListener('click', function(){
 })
 
 declineBtn.addEventListener('mouseenter', function(){
-    modalChoiceBtns.classList.toggle = 'reverse'
+    modalChoiceBtns.classList.toggle('modal-choice-btns-reverse')
 })
 
 declineBtn.addEventListener('touchend', function(){
-    modalChoiceBtns.classList.toggle = 'reverse'
+    modalChoiceBtns.classList.toggle('modal-choice-btns-reverse')
 })
 
 consentForm.addEventListener('submit', function(e){
